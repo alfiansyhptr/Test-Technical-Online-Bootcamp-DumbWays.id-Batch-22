@@ -23,28 +23,28 @@
 				- Others - Example to run an arbitary external command
 				- Edit task.json:
 						
-													"version": "2.0.0",
-									"tasks": [
-											{
-													"label": "JC",
-													"command": "echo Hello",
-													"windows": {
-															"command": "C:\\Program Files\\Java\\jdk1.8.0_281\\bin\\javac.exe"
-													},
-													"args": [
-															"${file}"
-													]
-											},
-											{
-											"label": "JR",
-													"command": "echo Hello",
-													"windows": {
-															"command": "C:\\Program Files\\Java\\jdk1.8.0_281\\bin\\javac.exe"
-													},
-													"args": [
-															"${fileBasenameNoExtension}"
-													]
-											}
+					"version": "2.0.0",
+    "tasks": [
+        {
+            "label": "JC",
+            "command": "echo Hello",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk1.8.0_281\\bin\\javac.exe"
+            },
+            "args": [
+                "${file}"
+            ]
+        },
+        {
+        "label": "JR",
+            "command": "echo Hello",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk1.8.0_281\\bin\\javac.exe"
+            },
+            "args": [
+                "${fileBasenameNoExtension}"
+            ]
+        }
 					- Now, Run Build task [ JC -> Compile (ALT + C), JR -> RUN (ALT+R) ]
 					- Continue without scanning the task output
   
